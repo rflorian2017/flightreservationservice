@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Passenger {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "PASSENGER_ID")
 	private long id;
 	
@@ -54,6 +54,17 @@ public class Passenger {
 	}
 
 	public void setAge(int age) {
+		this.age = age;
+	}
+
+	protected Passenger() {
+		
+	}
+	
+	public Passenger(long id, String firstName, String lastName, int age) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.age = age;
 	}
 	

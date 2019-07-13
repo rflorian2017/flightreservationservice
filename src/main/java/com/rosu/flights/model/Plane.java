@@ -45,6 +45,19 @@ public class Plane {
 	public void setSeatNo(int seatNo) {
 		this.seatNo = seatNo;
 	}
+
+	public Plane(long id, String aircraftModel, int seatNo) {
+	
+		this.id = id;
+		this.aircraftModel = aircraftModel;
+		this.seatNo = seatNo;
+	}
+
+	protected Plane() {
+		super();
+	}
+	
+	
 	
 	
 }
